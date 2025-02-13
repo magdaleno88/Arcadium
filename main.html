@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcadium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="stars-container"></div>
+    <header>
+        <h1>Arcadium</h1>
+        <div class="controls">
+			<input type="text" id="search" placeholder="Buscar producto...">
+			<button id="toggleDark">Modo Oscuro</button>
+			<button id="openCart">Carrito (<span id="cartCount">0</span>)</button>
+        </div>
+		<div class="wave-container">
+			<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<circle cx="720" cy="320" r="320" fill="var(--header-color)" fill-opacity="1"></circle>
+			</svg>
+		</div>
+	</header>
+
+  <!-- Filtros -->
+	<section id="filters">
+		<button class="filter-btn active" data-category="all">Todos</button>
+		<button class="filter-btn" data-category="Hechizos">Hechizos</button>
+		<button class="filter-btn" data-category="Milagro">Milagro</button>
+		<button class="filter-btn" data-category="Armas">Armas</button>
+	</section>
+
+  <!-- Catálogo de productos -->
+	<main class="container" id="productContainer">
+		<!-- Los productos se renderizan aquí -->
+	</main>
+
+	<!-- Carrito -->
+	<aside id="cart">
+		<h2>Carrito</h2>
+		<div id="cartItems">
+		<!-- Items del carrito -->
+		</div>
+		<div class="total">Total: $<span id="cartTotal">0.00</span></div>
+		<button id="checkoutBtn" style="margin-top: 1rem; width: 100%;">Finalizar Compra</button>
+		<button id="closeCart" style="margin-top: 1rem; width: 100%;">Cerrar Carrito</button>
+	</aside>
+
+	<!-- Modal de Checkout -->
+	<div id="checkoutModal">
+		<div class="modal-content">
+		<h2>Finalizar Compra</h2>
+		<form id="checkoutForm">
+			<input type="text" id="customerName" placeholder="Nombre" required>
+			<input type="email" id="customerEmail" placeholder="Correo" required>
+			<textarea id="customerAddress" placeholder="Dirección" required></textarea>
+			<button type="submit">Confirmar Compra</button>
+		</form>
+		<button id="closeModal" style="margin-top: 1rem;">Cerrar</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
