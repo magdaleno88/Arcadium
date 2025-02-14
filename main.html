@@ -8,18 +8,14 @@
 </head>
 <body>
 	<div class="stars-container"></div>
-    <header>
+    <header class="contenedor">
+		<canvas id="canvas"></canvas>
         <h1>Arcadium</h1>
         <div class="controls">
 			<input type="text" id="search" placeholder="Buscar producto...">
 			<button id="toggleDark">Modo Oscuro</button>
 			<button id="openCart">Carrito (<span id="cartCount">0</span>)</button>
         </div>
-		<div class="wave-container">
-			<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<circle cx="720" cy="320" r="320" fill="var(--header-color)" fill-opacity="1"></circle>
-			</svg>
-		</div>
 	</header>
 
   <!-- Filtros -->
