@@ -11,11 +11,9 @@ Arcadium es una tienda mágica en línea donde los usuarios pueden explorar y ad
 HTML5 para la estructura del sitio.
 CSS3 para el diseño y la animación del fondo estelar.
 JavaScript para la lógica de filtrado, carrito de compras y cambio de tema.
+
 🚀 Cómo ejecutar el proyecto
 Clona el repositorio en tu máquina local:
-sh
-Copiar
-Editar
 git clone https://github.com/tu-usuario/arcadium.git
 Abre el archivo index.html en tu navegador.
 ¡Explora la tienda mágica y adquiere los artefactos más poderosos!
